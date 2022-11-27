@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class Calculadoramatzias  {
+    static Scanner ñam = new Scanner(System.in);
+    public static void main(String[] args) {
+
+    
+        System.out.println("1. Calculadora de Euler");
+        System.out.println("2. Sistema de ecuaciones");
+        System.out.println("3. Ecuaciones cuadraticas");
+
+        int ec = ñam.nextInt();
+        switch (ec) {
+            case 1:
+             Euler ();
+             break;
+            case 2:
+             SisEcuaciones ();
+             break;
+            case 3:
+             cuadraticas ();
+             break;
+            default:
+             System.out.println("Inserta a,b o c según el caso");
+             break;
+        }
+
+    }
+    public static void Euler() {
+
+        System.out.println("Inserta el numero que quieras multiplicar por Euler");
+
+        int num = ñam.nextInt ();
+        
+        System.out.println(num * 2.71 );
+    
+    }
+    public static void SisEcuaciones() {
+    }
+    public static void cuadraticas() {
+            //Para poder tomar datos por teclado 
+  
+           System.out.println("\nFórmula Cuadrática");
+  
+           double a, b, c, x1, x2, potencia, raiz = 0 ;
+  
+           System.out.println("\nEscriba el numero 1?");
+           a = ñam.nextDouble();
+  
+           System.out.println("\nEscriba el numero 2?");
+           b = ñam.nextDouble();
+  
+           System.out.println("\nEscriba el numero 3?");
+           c = ñam.nextDouble();
+  
+           potencia = Math.pow (b=2, raiz) - (4 * a *c);
+  
+           x1 = (-b - Math.sqrt(potencia)/ 2*a);
+  
+           x2 = (-b + Math.sqrt(potencia)/ 2*a);
+  
+           System.out.println(x1 = + x1);
+           System.out.println(x2 =  + x2);
+    
+    }
+}
